@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+.aboutUs {
+  text-align: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.aboutUs-item {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.aboutUs-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #272727;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.aboutUs-title-ghost {
+  color: #ebebeb;
+  text-align: center;
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 2vw;
+  margin-top: 10vw;
+}
+.aboutUs-text {
+  color: #5a5a5a;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  line-height: 1.2;
+}
+.aboutUs-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 150px;
+}
+.aboutUs-icon {
+  width: 5rem;
+  height: auto;
+}
+.aboutUs-icon-text {
+  color: #5a5a5a;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .aboutUs .aboutUs {
+    margin-top: 4rem;
+  }
+  .aboutUs .aboutUs-title {
+    font-size: 2.5rem;
+  }
+  .aboutUs .aboutUs-text {
+    font-size: 1.5rem;
+  }
+  .aboutUs .aboutUs-image {
+    max-width: 200px;
+  }
+  .aboutUs .aboutUs-icon {
+    width: 5rem; /* 4rem'den 5rem'e çıkarıldı */
+  }
+  .aboutUs .aboutUs-icon-text {
+    font-size: 1.3rem; /* 1.2rem'den 1.3rem'e çıkarıldı */
+  }
+}
+@media (max-width: 480px) {
+  .aboutUs .aboutUs {
+    margin-top: 2rem;
+  }
+  .aboutUs .aboutUs-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .aboutUs .aboutUs-title {
+    font-size: 1.2rem;
+  }
+  .aboutUs .aboutUs-text {
+    font-size: 0.9rem;
+  }
+  .aboutUs .aboutUs-image {
+    max-width: 100px;
+  }
+  .aboutUs .aboutUs-icon {
+    width: 2.5rem;
+  }
+  .aboutUs .aboutUs-icon-text {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=AboutUs.css.map */

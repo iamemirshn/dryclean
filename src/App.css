@@ -1,0 +1,60 @@
+body {
+  user-select: none;
+  -webkit-user-select: none; /* Chrome, Safari ve diğer WebKit tabanlı tarayıcılar */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer ve Edge */
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+}
+
+.app-container {
+  max-width: 90%;
+}
+
+.whatsapp-wrapper {
+  position: fixed;
+  bottom: 40px; /* İkonun alt kısmını ayarlayın */
+  right: 40px; /* İkonun sağ kısmını ayarlayın */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-icon {
+  position: relative;
+  background-color: #25d366; /* WhatsApp yeşil rengi */
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* İkonun rengini beyaz yapma */
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #128c7e; /* Hover durumunda daha koyu yeşil renk */
+}
+
+.whatsapp-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  bottom: 60px; /* İkonun üzerinde biraz yukarıda olacak şekilde ayarlayın */
+  right: 0;
+  width: max-content;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1001; /* İkonun üzerinde görünmesini sağlar */
+}
+
+.whatsapp-wrapper:hover .whatsapp-tooltip {
+  visibility: visible;
+  opacity: 1;
+}

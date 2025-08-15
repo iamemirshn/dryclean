@@ -1,0 +1,32 @@
+@import "../../styles/abstracts/index";
+
+.product {
+  &-navbar {
+    margin-top: 8vw;
+    &-btn {
+      border: none;
+      border-radius: 0.4rem;
+      padding: 0.6vw 3.5vw;
+      font-weight: 600;
+      font-size: 0.8vw;
+      color: $color-black;
+      background-color: $color-mercury;
+      transition: 300ms ease;
+    }
+    &-btn:hover {
+      background-color: $color-blue;
+      color: $color-black;
+    }
+  }
+
+  &-title {
+    &-ghost {
+      color: #ebebeb;
+      text-align: center;
+      font-size: 12vw;
+      font-weight: 800;
+      line-height: 2vw;
+      margin-top: 10vw;
+    }
+  }
+}

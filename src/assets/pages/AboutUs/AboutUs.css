@@ -1,0 +1,82 @@
+.about-Us {
+  padding-top: 40px;
+  max-width: 70%;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .about-Us {
+    max-width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .about-Us {
+    max-width: 95%;
+  }
+}
+@media (max-width: 576px) {
+  .about-Us {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  h5 {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+ul {
+  padding-left: 20px;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  ul {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  ul {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=AboutUs.css.map */

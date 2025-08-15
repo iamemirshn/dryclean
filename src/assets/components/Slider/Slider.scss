@@ -1,0 +1,62 @@
+@import "../../styles/abstracts/index";
+
+.slider {
+  margin-top: 5rem;
+  text-align: center;
+
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-item {
+      width: 100%; // Resimlerin tam genişlikte olmasını sağlar
+      max-width: 457px; // Maksimum genişlik belirleme
+      height: auto;
+    }
+  }
+
+  &-title {
+    margin-top: 4rem;
+    font-size: 4vw;
+    font-weight: bold;
+    color: $color-nero;
+
+    @include breakpoint(md) {
+      font-size: 5vw; // Orta boyutlu cihazlarda başlık font büyüklüğünü arttırır
+    }
+  }
+
+  &-text {
+    font-size: 2vw;
+    font-weight: lighter;
+
+    @include breakpoint(md) {
+      font-size: 3vw; // Orta boyutlu cihazlarda metin font büyüklüğünü arttırır
+    }
+  }
+
+  &-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s;
+
+    @include breakpoint(md) {
+      padding: 14px 28px;
+      font-size: 16px; // Orta boyutlu cihazlarda düğme boyutlarını küçültür
+    }
+
+    @include breakpoint(sm) {
+      padding: 8px 15px;
+      font-size: 14px; // Küçük boyutlu cihazlarda düğme boyutlarını daha da küçültür
+    }
+
+    @include breakpoint(xs) {
+      padding: 5px 10px;
+      font-size: 12px; // Çok küçük boyutlu cihazlarda düğme boyutlarını en küçük hale getirir
+    }
+  }
+}

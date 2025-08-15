@@ -1,0 +1,101 @@
+@import "../../styles/abstracts/index";
+
+.footer {
+  background-color: $color-blue;
+  padding-top: 2rem;
+  margin-top: 2rem;
+
+  &-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $color-white;
+    text-align: left;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    color: $color-white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $color-white;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  &-link:hover {
+    color: lighten($color-black, 20%);
+    text-decoration: underline;
+  }
+
+  &-bottom {
+    width: 100%; // Tüm sayfanın genişliğini al
+    margin-top: 1rem;
+    background-color: darken($color-mercury, 5%);
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: $color-nero;
+    bottom: 0; // Sayfanın en altına yapıştırır
+    left: 0; // Sayfanın sol kenarına hizalar
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    &-text,
+    &-link {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+      text-align: center;
+    }
+
+    &-links {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    &-bottom {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      font-size: 1.2rem;
+    }
+
+    &-text,
+    &-link {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+      text-align: center;
+    }
+
+    &-bottom {
+      font-size: 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+.product-navbar {
+  margin-top: 8vw;
+}
+.product-navbar-btn {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.6vw 3.5vw;
+  font-weight: 600;
+  font-size: 0.8vw;
+  color: #000;
+  background-color: #cccccc;
+  transition: 300ms ease;
+}
+.product-navbar-btn:hover {
+  background-color: #0d6efd;
+  color: #000;
+}
+.product-title-ghost {
+  color: #ebebeb;
+  text-align: center;
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 2vw;
+  margin-top: 10vw;
+}/*# sourceMappingURL=Products.css.map */

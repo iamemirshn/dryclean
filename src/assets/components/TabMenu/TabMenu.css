@@ -1,0 +1,200 @@
+.tab-menu {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.tab-menu .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #ccc;
+  gap: 16px;
+}
+.tab-menu .tabs .tab-button {
+  border-radius: 4px;
+  flex: 1 1 auto;
+  padding: 12px;
+  border: none;
+  background: #f8f9fa;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+.tab-menu .tabs .tab-button:hover {
+  background: #e9ecef;
+  transform: translateY(-3px);
+}
+.tab-menu .tabs .tab-button.active {
+  background: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+.tab-menu .content {
+  padding: 20px;
+}
+.tab-menu .content .search-bar {
+  margin-bottom: 20px;
+}
+.tab-menu .content .search-bar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.tab-menu .content .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+}
+.tab-menu .content .product-grid .product-card {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.tab-menu .content .product-grid .product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.tab-menu .content .product-grid .product-card .product-info .rating {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tab-menu .content .product-grid .product-card .product-info .rating .category-label {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.tab-menu .content .product-grid .product-card .product-info .rating .star {
+  color: gold;
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+.tab-menu .content .product-grid .product-card .product-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+.tab-menu .content .product-grid .product-card .product-info .price {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.tab-menu .content .product-grid .product-card .product-info .price .original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1rem;
+}
+.tab-menu .content .product-grid .product-card .product-info .price .current-price {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.tab-menu .content .product-grid .product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.tab-menu .content .pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+.tab-menu .content .pagination .page-button {
+  border: 1px solid #ddd;
+  background: #f8f9fa;
+  color: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+}
+.tab-menu .content .pagination .page-button:hover {
+  background: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+.tab-menu .content .pagination .page-button.active {
+  background: #007bff;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tabs {
+    gap: 12px;
+  }
+}
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto);
+  }
+  .tab-button {
+    font-size: 0.9rem;
+  }
+  .search-bar input {
+    font-size: 0.9rem;
+  }
+  .pagination {
+    margin-top: 30px;
+  }
+  .pagination .page-button {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto);
+    gap: 8px;
+  }
+  .tab-button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .search-bar input {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .pagination {
+    margin-top: 20px;
+  }
+  .pagination .page-button {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .product-card {
+    padding: 10px;
+  }
+  .product-card .product-info h3 {
+    font-size: 1rem;
+  }
+  .product-card .product-info .price .original-price {
+    font-size: 0.9rem;
+  }
+  .product-card .product-info .price .current-price {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=TabMenu.css.map */

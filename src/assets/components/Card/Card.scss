@@ -1,0 +1,49 @@
+@import "../../styles/abstracts/index";
+
+.card {
+  margin: 30px;
+  width: 250px;
+  height: 400px;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+
+  &-product {
+    padding-top: 20%;
+
+    &-image {
+      margin: auto;
+      margin-top: 20px;
+      height: 200px;
+      width: 100%;
+      transform: translate(0, -1rem);
+      transition: transform 500ms ease-in-out;
+      filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    }
+
+    &-image:hover {
+      transform: translate(0rem, -3rem);
+    }
+
+    &-info {
+      font-size: 0.8rem;
+      font-weight: 600;
+
+      h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+      p {
+        margin: 0.4rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+    }
+
+    &-price {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}

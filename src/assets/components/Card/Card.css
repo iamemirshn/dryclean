@@ -1,0 +1,49 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+.card {
+  margin: 30px;
+  width: 250px;
+  height: 400px;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+}
+.card-product {
+  padding-top: 20%;
+}
+.card-product-image {
+  margin: auto;
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
+  transform: translate(0, -1rem);
+  transition: transform 500ms ease-in-out;
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+.card-product-image:hover {
+  transform: translate(0rem, -3rem);
+}
+.card-product-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.card-product-info h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.card-product-info p {
+  margin: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.card-product-price {
+  font-size: 1.2rem;
+  font-weight: 500;
+}/*# sourceMappingURL=Card.css.map */
